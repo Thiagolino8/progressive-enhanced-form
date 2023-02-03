@@ -1,0 +1,26 @@
+<script lang="ts">
+	import Error from './Error.svelte'
+
+	export let value: FormDataEntryValue
+	export let error: string | undefined
+	export let name: string
+	export let label: string
+	export let type: HTMLInputElement['type'] = 'text'
+
+	console.log(value)
+</script>
+
+<div class="form-control w-full">
+	<label class:text-error={error} for="firstName">{label}</label>
+	<input
+		on:change
+		class="input input-bordered w-full max-w-xs"
+		class:input-error={error}
+		id={name}
+		required={false}
+		{name}
+		{value}
+		{type}
+	/>
+</div>
+<Error {error} />
