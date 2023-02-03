@@ -109,7 +109,7 @@
 </script>
 
 <div
-	class="absolute top-0 flex w-full h-12 font-bold text-white justify-center items-center transition-all bg-green-500"
+	class="absolute top-0 flex w-full h-12 font-bold text-white justify-center items-center transition-all bg-green-500 z-10"
 	style:--logged={success ? 0 : 1}
 >
 	User Created
