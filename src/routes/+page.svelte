@@ -47,7 +47,7 @@
 				type: 'text',
 				label: 'Username',
 			},
-			{ name: 'email', type: 'email', label: 'Email' },
+			{ name: 'email', type: 'text', label: 'Email' },
 			{
 				name: 'password',
 				type: 'password',

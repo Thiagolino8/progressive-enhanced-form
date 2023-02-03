@@ -1,6 +1,6 @@
-<section class="flex h-min-screen w-full justify-center p-4">
+<main class="flex h-min-screen w-full justify-center p-4">
 	<slot />
-</section>
+</main>
 
 <style>
 	@tailwind base;
