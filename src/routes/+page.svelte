@@ -108,6 +108,14 @@
 	})
 </script>
 
+<svelte:head>
+	<title>Register</title>
+	<meta
+		name="description"
+		content="This is a simple test of progressive enhancement, animations and transitions in svelte"
+	/>
+</svelte:head>
+
 <div
 	class="absolute top-0 flex w-full h-12 font-bold text-white justify-center items-center transition-all bg-green-500 z-10"
 	style:--logged={success ? 0 : 1}
