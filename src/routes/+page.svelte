@@ -137,12 +137,13 @@
 		<Field {...field} bind:error={field.error} />
 	{/each}
 	<label class="label gap-2 w-full" for="agree">
-		<span class="label-text">I agree to the terms and conditions</span>
+		<span id="agree-label" class="label-text">I agree to the terms and conditions</span>
 		<input
 			class="checkbox checkbox-success"
 			class:input-error={getFieldErrors('agree')}
 			checked={!!getFormValue('agree')}
 			id="agree"
+			aria-labelledby="agree-label"
 			name="agree"
 			type="checkbox"
 		/>
