@@ -25,5 +25,8 @@
 		"vite": "^4.0.4",
 		"zod": "^3.20.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@sveltejs/adapter-vercel": "^1.0.6"
+	}
 }
