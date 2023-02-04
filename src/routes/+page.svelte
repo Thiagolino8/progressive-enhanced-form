@@ -124,7 +124,7 @@
 </div>
 
 <form
-	class="grid grid-cols-1 content-center justify-items-start gap-4 w-1/4"
+	class="grid grid-cols-1 content-center justify-items-start gap-4 md:w-1/4"
 	method="post"
 	action="?/login"
 	use:enhance={formEnhance}
