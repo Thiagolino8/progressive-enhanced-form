@@ -12,7 +12,7 @@
 	<label id="{name}-label" class:text-error={error} for={name}>{label}</label>
 	<input
 		on:change
-		class="input input-bordered w-full max-w-xs"
+		class="input input-bordered w-full"
 		class:input-error={error}
 		id={name}
 		aria-labelledby="{name}-label"

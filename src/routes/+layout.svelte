@@ -1,4 +1,4 @@
-<main class="flex h-min-screen w-full justify-center py-4">
+<main class="flex h-min-screen w-full justify-center p-4">
 	<slot />
 </main>
 
