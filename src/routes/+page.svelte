@@ -136,8 +136,10 @@
 	{#each fields as field}
 		<Field {...field} bind:error={field.error} />
 	{/each}
-	<label class="label gap-2 w-full" for="agree">
-		<span id="agree-label" class="label-text">I agree to the terms and conditions</span>
+	<div class="label gap-2 w-full">
+		<label id="agree-label" for="agree" class:text-error={getFieldErrors('agree')} class="label-text">
+			I agree to the terms and conditions
+		</label>
 		<input
 			class="checkbox checkbox-success"
 			class:input-error={getFieldErrors('agree')}
@@ -147,7 +149,7 @@
 			name="agree"
 			type="checkbox"
 		/>
-	</label>
+	</div>
 	<Error error={getFieldErrors('agree')} />
 	<button
 		formaction="?/login&submit=true"

@@ -6,12 +6,10 @@
 	export let name: string
 	export let label: string
 	export let type: HTMLInputElement['type'] = 'text'
-
-	console.log(value)
 </script>
 
 <div class="form-control w-full">
-	<label id="{name}-label" class:text-error={error} for="firstName">{label}</label>
+	<label id="{name}-label" class:text-error={error} for={name}>{label}</label>
 	<input
 		on:change
 		class="input input-bordered w-full max-w-xs"
